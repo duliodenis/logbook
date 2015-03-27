@@ -1,0 +1,22 @@
+//
+//  ViewController.m
+//  Logbook
+//
+//  Created by Dulio Denis on 3/27/15.
+//  Copyright (c) 2015 Dulio Denis. All rights reserved.
+//
+
+#import "ViewController.h"
+
+@interface ViewController ()
+
+@end
+
+@implementation ViewController
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+}
+
+@end
