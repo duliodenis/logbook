@@ -1,5 +1,5 @@
 //
-//  NewEntryViewController.h
+//  EntryViewController.h
 //  Logbook
 //
 //  Created by Dulio Denis on 3/27/15.
@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewEntryViewController : UIViewController
+@class LogEntry;
+
+@interface EntryViewController : UIViewController
+
+@property (nonatomic) LogEntry *logEntry;
 
 @end

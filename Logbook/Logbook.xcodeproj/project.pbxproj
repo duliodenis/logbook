@@ -10,14 +10,13 @@
 		6CD893081AC599DC003670D9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893071AC599DC003670D9 /* main.m */; };
 		6CD8930B1AC599DC003670D9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD8930A1AC599DC003670D9 /* AppDelegate.m */; };
 		6CD8930E1AC599DC003670D9 /* Logbook.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6CD8930C1AC599DC003670D9 /* Logbook.xcdatamodeld */; };
-		6CD893111AC599DC003670D9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893101AC599DC003670D9 /* ViewController.m */; };
 		6CD893141AC599DC003670D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CD893121AC599DC003670D9 /* Main.storyboard */; };
 		6CD893161AC599DC003670D9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CD893151AC599DC003670D9 /* Images.xcassets */; };
 		6CD893191AC599DC003670D9 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CD893171AC599DC003670D9 /* LaunchScreen.xib */; };
 		6CD893251AC599DC003670D9 /* LogbookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893241AC599DC003670D9 /* LogbookTests.m */; };
 		6CD893301AC59A2B003670D9 /* CoreDataStack.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD8932F1AC59A2B003670D9 /* CoreDataStack.m */; };
 		6CD893331AC5A2D4003670D9 /* LogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893321AC5A2D4003670D9 /* LogEntry.m */; };
-		6CD893361AC5AC40003670D9 /* NewEntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893351AC5AC40003670D9 /* NewEntryViewController.m */; };
+		6CD893361AC5AC40003670D9 /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893351AC5AC40003670D9 /* EntryViewController.m */; };
 		6CD893391AC5C857003670D9 /* EntryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893381AC5C857003670D9 /* EntryListViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -38,8 +37,6 @@
 		6CD893091AC599DC003670D9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		6CD8930A1AC599DC003670D9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		6CD8930D1AC599DC003670D9 /* Logbook.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Logbook.xcdatamodel; sourceTree = "<group>"; };
-		6CD8930F1AC599DC003670D9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		6CD893101AC599DC003670D9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6CD893131AC599DC003670D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6CD893151AC599DC003670D9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6CD893181AC599DC003670D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -50,8 +47,8 @@
 		6CD8932F1AC59A2B003670D9 /* CoreDataStack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataStack.m; sourceTree = "<group>"; };
 		6CD893311AC5A2D4003670D9 /* LogEntry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogEntry.h; sourceTree = "<group>"; };
 		6CD893321AC5A2D4003670D9 /* LogEntry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogEntry.m; sourceTree = "<group>"; };
-		6CD893341AC5AC40003670D9 /* NewEntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewEntryViewController.h; sourceTree = "<group>"; };
-		6CD893351AC5AC40003670D9 /* NewEntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewEntryViewController.m; sourceTree = "<group>"; };
+		6CD893341AC5AC40003670D9 /* EntryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryViewController.h; sourceTree = "<group>"; };
+		6CD893351AC5AC40003670D9 /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryViewController.m; sourceTree = "<group>"; };
 		6CD893371AC5C857003670D9 /* EntryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListViewController.h; sourceTree = "<group>"; };
 		6CD893381AC5C857003670D9 /* EntryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -95,12 +92,8 @@
 		6CD893041AC599DC003670D9 /* Logbook */ = {
 			isa = PBXGroup;
 			children = (
-				6CD893091AC599DC003670D9 /* AppDelegate.h */,
-				6CD8930A1AC599DC003670D9 /* AppDelegate.m */,
-				6CD8930F1AC599DC003670D9 /* ViewController.h */,
-				6CD893101AC599DC003670D9 /* ViewController.m */,
-				6CD893341AC5AC40003670D9 /* NewEntryViewController.h */,
-				6CD893351AC5AC40003670D9 /* NewEntryViewController.m */,
+				6CD893341AC5AC40003670D9 /* EntryViewController.h */,
+				6CD893351AC5AC40003670D9 /* EntryViewController.m */,
 				6CD893371AC5C857003670D9 /* EntryListViewController.h */,
 				6CD893381AC5C857003670D9 /* EntryListViewController.m */,
 				6CD8932E1AC59A2B003670D9 /* CoreDataStack.h */,
@@ -119,6 +112,8 @@
 		6CD893051AC599DC003670D9 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				6CD893091AC599DC003670D9 /* AppDelegate.h */,
+				6CD8930A1AC599DC003670D9 /* AppDelegate.m */,
 				6CD893061AC599DC003670D9 /* Info.plist */,
 				6CD893071AC599DC003670D9 /* main.m */,
 			);
@@ -245,10 +240,9 @@
 				6CD893301AC59A2B003670D9 /* CoreDataStack.m in Sources */,
 				6CD893391AC5C857003670D9 /* EntryListViewController.m in Sources */,
 				6CD8930B1AC599DC003670D9 /* AppDelegate.m in Sources */,
-				6CD893361AC5AC40003670D9 /* NewEntryViewController.m in Sources */,
+				6CD893361AC5AC40003670D9 /* EntryViewController.m in Sources */,
 				6CD8930E1AC599DC003670D9 /* Logbook.xcdatamodeld in Sources */,
 				6CD893331AC5A2D4003670D9 /* LogEntry.m in Sources */,
-				6CD893111AC599DC003670D9 /* ViewController.m in Sources */,
 				6CD893081AC599DC003670D9 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

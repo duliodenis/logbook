@@ -4,24 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="ufC-wZ-h7g">
-            <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
-            </objects>
-        </scene>
-        <!--Root View Controller-->
+        <!--Logbook-->
         <scene sceneID="LGV-pt-fm2">
             <objects>
                 <tableViewController id="pAx-cB-SFS" customClass="EntryListViewController" sceneMemberID="viewController">
@@ -35,6 +18,9 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="omt-Hh-drr" id="dYa-BQ-nwg">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="Pfa-c8-Vn2" kind="presentation" identifier="edit" id="gOm-0c-85y"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -42,7 +28,7 @@
                             <outlet property="delegate" destination="pAx-cB-SFS" id="DAt-SG-SlI"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="9fY-ID-vzZ">
+                    <navigationItem key="navigationItem" title="Logbook" id="9fY-ID-vzZ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="ohV-ey-2xD">
                             <connections>
                                 <segue destination="Pfa-c8-Vn2" kind="presentation" id="jDN-vN-DRD"/>
@@ -54,10 +40,10 @@
             </objects>
             <point key="canvasLocation" x="2068" y="383"/>
         </scene>
-        <!--New Entry View Controller-->
+        <!--Entry View Controller-->
         <scene sceneID="Se9-hL-sSz">
             <objects>
-                <viewController id="Y4e-q5-uUb" customClass="NewEntryViewController" sceneMemberID="viewController">
+                <viewController id="Y4e-q5-uUb" customClass="EntryViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GOc-cy-MHv"/>
                         <viewControllerLayoutGuide type="bottom" id="l7i-K2-AEJ"/>
@@ -92,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LRi-WA-2hc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2830" y="-301"/>
+            <point key="canvasLocation" x="3522" y="383"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="ehS-Uf-V7O">
@@ -126,7 +112,10 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Lh-ic-v0D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2068" y="-301"/>
+            <point key="canvasLocation" x="2772" y="383"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="gOm-0c-85y"/>
+    </inferredMetricsTieBreakers>
 </document>
