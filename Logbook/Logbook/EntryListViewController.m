@@ -10,6 +10,7 @@
 #import "CoreDataStack.h"
 #import "LogEntry.h"
 #import "EntryViewController.h"
+#import "EntryCell.h"
 
 @interface EntryListViewController () <NSFetchedResultsControllerDelegate>
 @property (nonatomic) NSFetchedResultsController *fetchedResultsController;
@@ -59,10 +60,11 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
+    EntryCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
     
-    LogEntry *log = [self.fetchedResultsController objectAtIndexPath:indexPath];
-    cell.textLabel.text = log.body;
+    LogEntry *logEntry = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    // cell.textLabel.text = log.body;
+    [cell configureCellForEntry:logEntry];
     
     return cell;
 }
@@ -81,6 +83,13 @@
     [[cds managedObjectContext] deleteObject:logEntry];
     [cds saveContext];
 }
+
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    LogEntry *logEntry = [self.fetchedResultsController objectAtIndexPath:indexPath];
+    return [EntryCell heightForEntry:logEntry];
+}
+
 
 #pragma mark - NSFetchedResultsController Delegate Methods
 

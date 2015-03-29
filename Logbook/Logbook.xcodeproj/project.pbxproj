@@ -18,6 +18,8 @@
 		6CD893331AC5A2D4003670D9 /* LogEntry.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893321AC5A2D4003670D9 /* LogEntry.m */; };
 		6CD893361AC5AC40003670D9 /* EntryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893351AC5AC40003670D9 /* EntryViewController.m */; };
 		6CD893391AC5C857003670D9 /* EntryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893381AC5C857003670D9 /* EntryListViewController.m */; };
+		6CDB335E1AC750E6008793E9 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB335D1AC750E6008793E9 /* NavigationController.m */; };
+		6CDB33611AC756B9008793E9 /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB33601AC756B9008793E9 /* EntryCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		6CD893351AC5AC40003670D9 /* EntryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryViewController.m; sourceTree = "<group>"; };
 		6CD893371AC5C857003670D9 /* EntryListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryListViewController.h; sourceTree = "<group>"; };
 		6CD893381AC5C857003670D9 /* EntryListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryListViewController.m; sourceTree = "<group>"; };
+		6CDB335C1AC750E6008793E9 /* NavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NavigationController.h; sourceTree = "<group>"; };
+		6CDB335D1AC750E6008793E9 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
+		6CDB335F1AC756B9008793E9 /* EntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryCell.h; sourceTree = "<group>"; };
+		6CDB33601AC756B9008793E9 /* EntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,10 +98,14 @@
 		6CD893041AC599DC003670D9 /* Logbook */ = {
 			isa = PBXGroup;
 			children = (
+				6CDB335C1AC750E6008793E9 /* NavigationController.h */,
+				6CDB335D1AC750E6008793E9 /* NavigationController.m */,
 				6CD893341AC5AC40003670D9 /* EntryViewController.h */,
 				6CD893351AC5AC40003670D9 /* EntryViewController.m */,
 				6CD893371AC5C857003670D9 /* EntryListViewController.h */,
 				6CD893381AC5C857003670D9 /* EntryListViewController.m */,
+				6CDB335F1AC756B9008793E9 /* EntryCell.h */,
+				6CDB33601AC756B9008793E9 /* EntryCell.m */,
 				6CD8932E1AC59A2B003670D9 /* CoreDataStack.h */,
 				6CD8932F1AC59A2B003670D9 /* CoreDataStack.m */,
 				6CD893121AC599DC003670D9 /* Main.storyboard */,
@@ -240,8 +250,10 @@
 				6CD893301AC59A2B003670D9 /* CoreDataStack.m in Sources */,
 				6CD893391AC5C857003670D9 /* EntryListViewController.m in Sources */,
 				6CD8930B1AC599DC003670D9 /* AppDelegate.m in Sources */,
+				6CDB33611AC756B9008793E9 /* EntryCell.m in Sources */,
 				6CD893361AC5AC40003670D9 /* EntryViewController.m in Sources */,
 				6CD8930E1AC599DC003670D9 /* Logbook.xcdatamodeld in Sources */,
+				6CDB335E1AC750E6008793E9 /* NavigationController.m in Sources */,
 				6CD893331AC5A2D4003670D9 /* LogEntry.m in Sources */,
 				6CD893081AC599DC003670D9 /* main.m in Sources */,
 			);
