@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Dulio Denis. All rights reserved.
 //
 
+#import <QuartzCore/QuartzCore.h>
 #import "EntryCell.h"
 #import "LogEntry.h"
 
@@ -37,7 +38,7 @@
     self.locationLabel.text = logEntry.location;
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-    [dateFormatter setDateFormat:@"EEEE, MMMMM d yyyy"];
+    [dateFormatter setDateFormat:@"EEEE, MMMM d yyyy"];
     NSDate *date = [NSDate dateWithTimeIntervalSince1970:logEntry.date];
     self.dateLabel.text = [dateFormatter stringFromDate:date];
     
@@ -54,6 +55,8 @@
     } else if (logEntry.mood == kLogEntryMoodBad) {
         self.moodImageView.image = [UIImage imageNamed:@"bad"];
     }
+    
+    self.mainImageView.layer.cornerRadius = CGRectGetWidth(self.mainImageView.frame) / 2;
 }
 
 @end

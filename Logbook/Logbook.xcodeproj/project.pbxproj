@@ -20,6 +20,7 @@
 		6CD893391AC5C857003670D9 /* EntryListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CD893381AC5C857003670D9 /* EntryListViewController.m */; };
 		6CDB335E1AC750E6008793E9 /* NavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB335D1AC750E6008793E9 /* NavigationController.m */; };
 		6CDB33611AC756B9008793E9 /* EntryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6CDB33601AC756B9008793E9 /* EntryCell.m */; };
+		6CDB51391AC8C6A3006EC95C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CDB51381AC8C6A3006EC95C /* QuartzCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		6CDB335D1AC750E6008793E9 /* NavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NavigationController.m; sourceTree = "<group>"; };
 		6CDB335F1AC756B9008793E9 /* EntryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EntryCell.h; sourceTree = "<group>"; };
 		6CDB33601AC756B9008793E9 /* EntryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EntryCell.m; sourceTree = "<group>"; };
+		6CDB51381AC8C6A3006EC95C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CDB51391AC8C6A3006EC95C /* QuartzCore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +83,7 @@
 		6CD892F91AC599DC003670D9 = {
 			isa = PBXGroup;
 			children = (
+				6CDB51381AC8C6A3006EC95C /* QuartzCore.framework */,
 				6CD893041AC599DC003670D9 /* Logbook */,
 				6CD893211AC599DC003670D9 /* LogbookTests */,
 				6CD893031AC599DC003670D9 /* Products */,
@@ -100,10 +104,10 @@
 			children = (
 				6CDB335C1AC750E6008793E9 /* NavigationController.h */,
 				6CDB335D1AC750E6008793E9 /* NavigationController.m */,
-				6CD893341AC5AC40003670D9 /* EntryViewController.h */,
-				6CD893351AC5AC40003670D9 /* EntryViewController.m */,
 				6CD893371AC5C857003670D9 /* EntryListViewController.h */,
 				6CD893381AC5C857003670D9 /* EntryListViewController.m */,
+				6CD893341AC5AC40003670D9 /* EntryViewController.h */,
+				6CD893351AC5AC40003670D9 /* EntryViewController.m */,
 				6CDB335F1AC756B9008793E9 /* EntryCell.h */,
 				6CDB33601AC756B9008793E9 /* EntryCell.m */,
 				6CD8932E1AC59A2B003670D9 /* CoreDataStack.h */,
