@@ -6,11 +6,14 @@
 //  Copyright (c) 2015 Dulio Denis. All rights reserved.
 //
 
+#import <CoreLocation/CoreLocation.h>
 #import "EntryViewController.h"
 #import "LogEntry.h"
 #import "CoreDataStack.h"
 
-@interface EntryViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate>
+@interface EntryViewController () <UINavigationControllerDelegate, UIImagePickerControllerDelegate, CLLocationManagerDelegate>
+@property (nonatomic) CLLocationManager *locationManager;
+@property (nonatomic) NSString *location;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (nonatomic) enum LogEntryMood pickedMood;
 @property (weak, nonatomic) IBOutlet UIButton *badButton;
@@ -42,6 +45,7 @@
     } else {
         self.pickedMood = kLogEntryMoodGood;
         date = [NSDate date];
+        [self loadLocation];
     }
     
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
@@ -125,7 +129,6 @@
     if (!pickedImage) {
         [self.imageButton setImage:[UIImage imageNamed:@"noImage"] forState:UIControlStateNormal];
     } else {
-        NSLog(@"Set the image");
         [self.imageButton setImage:pickedImage forState:UIControlStateNormal];
     }
 }
@@ -139,6 +142,7 @@
     log.body = self.textView.text;
     log.date = [[NSDate date] timeIntervalSince1970];
     log.image = UIImageJPEGRepresentation(self.pickedImage, 0.75);
+    log.location = self.location;
     [cds saveContext];
 }
 
@@ -217,6 +221,29 @@
 }
 
 
+#pragma mark - Core Location Methods
 
+- (void)loadLocation {
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    self.locationManager.desiredAccuracy = 1000; // 1000m = 1km (0.6 miles)
+    // Check for iOS 8. Without this guard the code will crash with "unknown selector" on iOS 7.
+    if ([self.locationManager respondsToSelector:@selector(requestWhenInUseAuthorization)]) {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
+    [self.locationManager startUpdatingLocation];
+}
+
+
+- (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
+    [self.locationManager stopUpdatingLocation];
+    CLLocation *location = [locations firstObject];
+    
+    CLGeocoder *geoCoder = [[CLGeocoder alloc] init];
+    [geoCoder reverseGeocodeLocation:location completionHandler:^(NSArray *placemarks, NSError *error) {
+        CLPlacemark *placemark = [placemarks firstObject];
+        self.location = placemark.name;
+    }];
+}
 
 @end

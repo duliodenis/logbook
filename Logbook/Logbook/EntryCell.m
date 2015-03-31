@@ -57,6 +57,12 @@
     }
     
     self.mainImageView.layer.cornerRadius = CGRectGetWidth(self.mainImageView.frame) / 2;
+    
+    if (logEntry.location.length > 0) {
+        self.locationLabel.text = logEntry.location;
+    } else {
+        self.locationLabel.text = @"No location";
+    }
 }
 
 @end
